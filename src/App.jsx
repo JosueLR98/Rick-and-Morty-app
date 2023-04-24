@@ -25,7 +25,7 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="App bg-cover bg-[url('/public/images/Fd.png')]  ">
+    <div className="App bg-cover bg-[url('/images/Fd.png')]  ">
       <form onSubmit={handleSubmit}>
         <div className=" flex flex-col bg-cover justify-center items-center px-[100px] ">
           <img
@@ -33,7 +33,7 @@ function App() {
             src="/public/images/circle.png"
             alt=""
           />
-          <img className=" absolute  mt-[-280px]" src="/public/images/logo.png" alt="" />
+          <img className=" absolute  mt-[-280px]" src="/images/logo.png" alt="" />
 
           <div className="flex justify-center items-center  mt-12 pt-6 ">
             <input

@@ -26,24 +26,23 @@ function App() {
   }, []);
   return (
     <div className=" aspect-square bg-[url('/images/Fd.png')]  bg-contain ">
+      <img className="px-6" src="/public/images/circle.png" alt="" />
+      <img
+        className=" absolute text-center top-0 px-3"
+        src="/images/logo.png"
+        alt=""
+      />
       <form onSubmit={handleSubmit}>
-        <div className=" flex flex-col bg-cover justify-center items-center px-[100px] ">
-          <img
-            className=""
-            src="/public/images/circle.png"
-            alt=""
-          />
-          <img className=" absolute top-0" src="/images/logo.png" alt="" />
-
-          <div className="flex justify-center items-center  mt-10 pt-6 ">
+        <div className="">
+          <div className="flex justify-center max-w-[500px] pt-6 mx-auto ">
             <input
               id="locationId"
-              placeholder="Enter location 1 to 125" 
-              className=" border-2 border-[#8EFF8B] text-center text-white bg-transparent w-[400px]"
+              placeholder="Enter location 1 to 125"
+              className=" border-2 border-[#8EFF8B] text-center text-white bg-transparent w-[400px] p-1 text-3xl "
               type="text"
             />
-            <button className=" flex  px-4 h-[27px] border-[#8EFF8B] bg-[#8EFF8B] ">
-              Search <i class="bx bx-search"></i>
+            <button className=" flex items-center px-4  h-7 p-6 border-[#8EFF8B] bg-[#8EFF8B]  ">
+              Search <i className="bx bx-search p-1"></i>
             </button>
           </div>
         </div>

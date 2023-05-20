@@ -25,24 +25,24 @@ function App() {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="App bg-cover bg-[url('/images/Fd.png')]  ">
+    <div className=" aspect-square bg-[url('/images/Fd.png')]  bg-contain ">
       <form onSubmit={handleSubmit}>
         <div className=" flex flex-col bg-cover justify-center items-center px-[100px] ">
           <img
-            className="animate-pulse"
+            className=""
             src="/public/images/circle.png"
             alt=""
           />
-          <img className=" absolute  mt-[-280px]" src="/images/logo.png" alt="" />
+          <img className=" absolute top-0" src="/images/logo.png" alt="" />
 
-          <div className="flex justify-center items-center  mt-12 pt-6 ">
+          <div className="flex justify-center items-center  mt-10 pt-6 ">
             <input
               id="locationId"
-              placeholder="Type a location id... "
+              placeholder="Enter location 1 to 125" 
               className=" border-2 border-[#8EFF8B] text-center text-white bg-transparent w-[400px]"
               type="text"
             />
-            <button className="  px-4 h-[27px] border-[#8EFF8B] bg-[#8EFF8B] ">
+            <button className=" flex  px-4 h-[27px] border-[#8EFF8B] bg-[#8EFF8B] ">
               Search <i class="bx bx-search"></i>
             </button>
           </div>
